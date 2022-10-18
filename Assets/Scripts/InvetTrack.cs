@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class InvetTrack : MonoBehaviour
 
@@ -27,7 +28,7 @@ public class InvetTrack : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.I))
         {
-            Menu.SetActive(!Menu.activeSelf);
+            SceneManager.LoadScene("Pockets");
 
         }
     }
